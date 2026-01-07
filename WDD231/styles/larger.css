@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .site-header { padding: 1rem 2rem }
+  .menu-toggle { display: none }
+  .site-nav ul { display: flex; gap: 0.5rem }
+  .site-nav a { border-radius: 6px }
+  .site-nav a:hover { background: #f0f3f9 }
+  main { padding: 2rem }
+  h1 { font-size: 2rem }
+  .panel { padding: 1.25rem }
+  .cards { grid-template-columns: repeat(3, 1fr) }
+  .footer-grid { grid-template-columns: 1fr auto auto; align-items: center }
+  .grid-two { grid-template-columns: 2fr 1fr }
+  .hero { padding: 2rem }
+  .hero h1 { font-size: 2.25rem }
+}

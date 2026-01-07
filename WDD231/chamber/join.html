@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join the Chamber</title>
+  <meta name="description" content="Membership benefits, levels, and application form.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/small.css">
+  <link rel="stylesheet" href="../styles/larger.css">
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../scripts/date.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="../images/logo.svg" alt="Rexburg Chamber Logo" class="logo">
+      <span class="site-owner">Rexburg Chamber</span>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"></button>
+    <nav id="primary-nav" class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" aria-current="page">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Join the Chamber</h1>
+    <section class="panel">
+      <h2>Membership Levels</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Non-Profit</h3>
+          <ul>
+            <li>Directory listing</li>
+            <li>Monthly newsletter</li>
+            <li>Member pricing at events</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Silver</h3>
+          <ul>
+            <li>Everything in Non-Profit</li>
+            <li>Social media promotion</li>
+            <li>Quarterly trainings</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Gold</h3>
+          <ul>
+            <li>Everything in Silver</li>
+            <li>Event sponsorships</li>
+            <li>Featured directory placement</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Membership Application</h2>
+      <form class="form" id="join-form">
+        <label for="org">Organization Name</label>
+        <input id="org" name="org" required>
+        <label for="contact">Contact Name</label>
+        <input id="contact" name="contact" required>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required>
+        <label for="level">Membership Level</label>
+        <select id="level" name="level" required>
+          <option value="">Select a level</option>
+          <option>Non-Profit</option>
+          <option>Silver</option>
+          <option>Gold</option>
+        </select>
+        <button class="btn primary" type="submit">Apply</button>
+        <p id="apply-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <p>© <span id="currentyear"></span> Rexburg Chamber • Rexburg, Idaho</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+  <script>
+    const form = document.getElementById('join-form');
+    const status = document.getElementById('apply-status');
+    if (form && status) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        status.textContent = 'Application submitted. We will contact you soon.';
+        form.reset();
+      });
+    }
+  </script>
+</body>
+</html>

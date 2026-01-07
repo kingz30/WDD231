@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Directory</title>
+  <meta name="description" content="Browse Rexburg Chamber member businesses by category.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/small.css">
+  <link rel="stylesheet" href="../styles/larger.css">
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../scripts/date.js" defer></script>
+  <script src="../scripts/media.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="../images/logo.svg" alt="Rexburg Chamber Logo" class="logo">
+      <span class="site-owner">Rexburg Chamber</span>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"></button>
+    <nav id="primary-nav" class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html" aria-current="page">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Business Directory</h1>
+    <section class="panel">
+      <div class="filters" role="group" aria-label="Filter directory by category">
+        <button class="chip" data-category="all" aria-pressed="true">All</button>
+        <button class="chip" data-category="Food" aria-pressed="false">Food</button>
+        <button class="chip" data-category="Fitness" aria-pressed="false">Fitness</button>
+        <button class="chip" data-category="Technology" aria-pressed="false">Technology</button>
+        <button class="chip" data-category="Retail" aria-pressed="false">Retail</button>
+        <button class="chip" data-category="Services" aria-pressed="false">Services</button>
+        <button class="chip" data-category="Non-Profit" aria-pressed="false">Non-Profit</button>
+      </div>
+      <div id="directory-list" class="cards"></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <p>© <span id="currentyear"></span> Rexburg Chamber • Rexburg, Idaho</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

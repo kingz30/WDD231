@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300" role="img" aria-label="Student photo placeholder">
+  <rect x="1" y="1" width="298" height="298" rx="12" fill="#f0f3f9" stroke="#d7dce5"/>
+  <circle cx="150" cy="110" r="45" fill="#c9d3e7"/>
+  <rect x="70" y="170" width="160" height="80" rx="10" fill="#c9d3e7"/>
+</svg>

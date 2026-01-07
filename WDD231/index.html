@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WDD 231 • Course Home</title>
+  <meta name="description" content="Course home for WDD 231 with responsive navigation, sections, and dynamic JavaScript features.">
+  <meta name="author" content="Ashely Okaka">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Site Logo" class="logo">
+      <span class="site-owner">Ashely Okaka</span>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"></button>
+    <nav id="primary-nav" class="site-nav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="chamber/index.html">Chamber</a></li>
+        <li><a href="final/index.html">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Build. Learn. Launch.</h1>
+      <p>Professional, accessible, and responsive web projects for WDD 231.</p>
+      <div class="cta">
+        <a class="btn primary" href="chamber/index.html">View Chamber</a>
+        <a class="btn secondary" href="final/index.html">View Final</a>
+      </div>
+    </section>
+    <h1>Home</h1>
+    <section class="panel">
+      <h2>Course Overview</h2>
+      <p>Welcome to WDD 231. This home page demonstrates responsive design, accessibility, and dynamic content.</p>
+    </section>
+    <div class="grid-two">
+      <section class="panel">
+        <h2>About Me</h2>
+        <p>Hi, I’m Ashely Okaka, a 20‑year‑old web developer from Kampala, Uganda. I love turning ideas into accessible, fast experiences and exploring how technology can strengthen local communities. When I’m not coding, I dig into UI design systems and small civic tech projects that make everyday life simpler.</p>
+        <p><strong>Student Number:</strong> <span>30017479</span></p>
+      </section>
+      <section class="panel photo-panel">
+        <h2>Student Photo</h2>
+        <img class="profile-photo" src="images/final pictuer.jpg" data-fallback="images/student-placeholder.svg" alt="Portrait of Ashely Okaka" width="300" height="300" loading="lazy">
+      </section>
+    </div>
+    <section class="panel">
+      <h2>Current Courses</h2>
+      <div class="filters" role="group" aria-label="Filter courses by subject">
+        <button class="chip" data-filter="all" aria-pressed="true">All</button>
+        <button class="chip" data-filter="WDD" aria-pressed="false">WDD</button>
+        <button class="chip" data-filter="CSE" aria-pressed="false">CSE</button>
+      </div>
+      <p class="credits">Total Credits: <span id="total-credits" aria-live="polite">0</span></p>
+      <div id="course-cards" class="cards"></div>
+    </section>
+    <section class="panel">
+      <h2>Resources</h2>
+      <ul class="resource-list">
+        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+        <li><a href="https://web.dev/measure/">Lighthouse</a></li>
+        <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="social">
+        <a class="icon" href="https://github.com/kingz30" aria-label="GitHub">
+          <img src="images/github.svg" alt="">
+        </a>
+        <a class="icon" href="https://www.linkedin.com/in/yourlinkedin" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="">
+        </a>
+        <a class="icon" href="https://x.com/yourhandle" aria-label="X">
+          <img src="images/x.svg" alt="">
+        </a>
+        <a class="icon" href="https://instagram.com/yourhandle" aria-label="Instagram">
+          <img src="images/instagram.svg" alt="">
+        </a>
+        <a class="icon" href="https://facebook.com/yourhandle" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="">
+        </a>
+        <a class="icon" href="https://youtube.com/@yourhandle" aria-label="YouTube">
+          <img src="images/youtube.svg" alt="">
+        </a>
+        <a class="icon" href="mailto:ashelybamacoh@gmail.com" aria-label="Email">
+          <img src="images/mail.svg" alt="">
+        </a>
+      </div>
+      <p>© <span id="currentyear"></span> • Ashely Okaka • Kampala, Uganda</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+  <script src="scripts/media.js" defer></script>
+</body>
+</html>

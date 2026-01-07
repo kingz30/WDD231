@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rexburg Chamber of Commerce</title>
+  <meta name="description" content="Chamber of Commerce site: events, directory, membership, and resources.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/small.css">
+  <link rel="stylesheet" href="../styles/larger.css">
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../scripts/date.js" defer></script>
+  <script src="../scripts/media.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="../images/logo.svg" alt="Rexburg Chamber Logo" class="logo">
+      <span class="site-owner">Rexburg Chamber</span>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"></button>
+    <nav id="primary-nav" class="site-nav">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Welcome to the Rexburg Chamber</h1>
+    <section class="panel hero">
+      <img src="../images/chamber-hero.jpg" data-fallback="../images/chamber-hero.svg" alt="Rexburg community and business district" width="1200" height="400" style="width:100%;height:auto;border-radius:8px">
+    </section>
+    <section class="panel">
+      <h2>Community Highlights</h2>
+      <p>Connecting local businesses with resources, events, and a supportive community.</p>
+    </section>
+    <section class="panel">
+      <h2>Weather</h2>
+      <p>Rexburg, ID</p>
+      <p>High 32°F • Low 18°F</p>
+    </section>
+    <section class="panel">
+      <h2>Upcoming Events</h2>
+      <ul class="events">
+        <li><span class="date">Jan 15</span> Networking Breakfast</li>
+        <li><span class="date">Jan 24</span> Marketing Workshop</li>
+        <li><span class="date">Feb 6</span> Small Business Roundtable</li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>Member Spotlights</h2>
+      <div class="cards">
+        <article class="card"><h3>Stone Creek Café</h3><p>Local café near Main Street.</p></article>
+        <article class="card"><h3>Madison Fitness</h3><p>Community gym with classes.</p></article>
+        <article class="card"><h3>Highland Tech</h3><p>IT services for small business.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <p>© <span id="currentyear"></span> Rexburg Chamber • Rexburg, Idaho</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>

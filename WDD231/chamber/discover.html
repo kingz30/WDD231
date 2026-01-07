@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover Rexburg</title>
+  <meta name="description" content="History, demographics, and highlights of Rexburg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/small.css">
+  <link rel="stylesheet" href="../styles/larger.css">
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="../scripts/date.js" defer></script>
+  <script src="../scripts/media.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="../images/logo.svg" alt="Rexburg Chamber Logo" class="logo">
+      <span class="site-owner">Rexburg Chamber</span>
+    </div>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation"></button>
+    <nav id="primary-nav" class="site-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" aria-current="page">Discover</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Discover Rexburg</h1>
+    <section class="panel">
+      <h2>History</h2>
+      <p>Founded in the late 19th century, Rexburg evolved with education and agriculture into a dynamic community with a strong entrepreneurial spirit.</p>
+    </section>
+    <section class="panel">
+      <h2>Demographics</h2>
+      <ul class="facts">
+        <li>Population: 35,000</li>
+        <li>Median Age: 23</li>
+        <li>Households: 9,500</li>
+        <li>Key Sectors: Education, Retail, Services</li>
+      </ul>
+    </section>
+    <section class="panel">
+      <h2>Area Highlights</h2>
+      <div class="cards">
+        <article class="card"><h3>Parks & Trails</h3><img src="../images/discover-1.jpg" data-fallback="../images/discover-1.svg" alt="Parks and trails" width="400" height="240" style="width:100%;height:auto;border-radius:6px"><p>Outdoor recreation across seasons.</p></article>
+        <article class="card"><h3>Community Events</h3><img src="../images/discover-2.jpg" data-fallback="../images/discover-2.svg" alt="Community events" width="400" height="240" style="width:100%;height:auto;border-radius:6px"><p>Monthly gatherings and workshops.</p></article>
+        <article class="card"><h3>Local Markets</h3><img src="../images/discover-3.jpg" data-fallback="../images/discover-3.svg" alt="Local markets" width="400" height="240" style="width:100%;height:auto;border-radius:6px"><p>Shop local to support small business.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <p>© <span id="currentyear"></span> Rexburg Chamber • Rexburg, Idaho</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
